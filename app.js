@@ -211,6 +211,6 @@ async function updateBoards() {
 
 // Start applikationen
 document.addEventListener('DOMContentLoaded', function() {
-    setInterval(updateBoards, 60000); // Opdater hvert minut
+    setInterval(updateBoards, 20000); 
     updateBoards(); // Første load
 });
