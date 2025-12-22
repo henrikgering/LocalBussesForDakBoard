@@ -16,8 +16,8 @@ h1 {
 
 .board { 
     background: #000000; 
-    margin: 30px auto; 
-    padding: 30px; 
+    margin: 3px auto; 
+    padding: 3px; 
     max-width: 700px; 
 }
 
@@ -67,4 +67,27 @@ table tr:hover {
     background: linear-gradient(145deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.04) 100%);
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Disable all scrolling and hide scrollbars globally */
+html, body {
+    overflow: hidden !important;
+    height: 100%;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overscroll-behavior: none;
+}
+
+/* Ensure no child can scroll */
+* {
+    overflow: hidden !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* WebKit browsers */
+*::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
 }
